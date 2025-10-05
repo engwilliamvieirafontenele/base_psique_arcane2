@@ -3,4 +3,4 @@ services:
             name: django-app
             env: python
             buildCommand: pip install -r requirements.txt
-            startCommand: gunicorn django_app.wsgi --log-file -
+            startCommand: gunicorn core.wsgi --log-file -
