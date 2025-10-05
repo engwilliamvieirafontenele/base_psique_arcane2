@@ -10,5 +10,5 @@ services:
   region: oregon
   buildCommand: pip install -r requirements.txt
   #startCommand: gunicorn core.wsgi --log-file -
-  startCommand: gunicorn -c core.wsgi.py
+  startCommand: gunicorn -c core.wsgi
   autoDeployTrigger: commit
