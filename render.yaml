@@ -9,5 +9,5 @@ services:
   plan: starter
   region: oregon
   buildCommand: pip install -r requirements.txt
-  startCommand: gunicorn base_psique_arcane2.core.wsgi.application
+  startCommand: gunicorn base_psique_arcane2/core/wsgi.py
   autoDeployTrigger: commit
